@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">TravelByLoveGuide</string>
-    <string name="category_attraction">attraction</string>
+    <string name="category_attraction">events</string>
     <string name="category_museum">museum</string>
-    <string name="category_restaurant">restaurant</string>
+    <string name="category_restaurant">food</string>
     <string name="category_hostel">hostel</string>
 </resources>

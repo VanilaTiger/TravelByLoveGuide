@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:minHeight="@dimen/list_item_height"
+    android:background="@color/colorPrimaryDark">
+
+    <ImageView
+        android:id="@+id/mImageOfTourObject"
+        android:layout_width="@dimen/list_item_height"
+        android:layout_height="@dimen/list_item_height"
+        android:background="@android:color/black"/>
+
+        <LinearLayout
+        android:id="@+id/textContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp">
+
+            <LinearLayout
+                android:id="@+id/textDetailsOfTourObject"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/mNameOfTourObject"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="top"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textColor="@android:color/white"
+                        android:text="Name of attraction"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/mAddressOfTourObject"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="top"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textColor="@android:color/white"
+                        android:text="adres" />
+
+                    <TextView
+                        android:id="@+id/mPhoneNumberOfTourObject"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="top"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textColor="@android:color/white"
+                        android:text="phone number" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/mDescriptOfTourObject"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="top"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@android:color/white"
+                android:paddingLeft="16dp"
+                android:text="description" />
+
+        </LinearLayout>
+
+
+</LinearLayout>
