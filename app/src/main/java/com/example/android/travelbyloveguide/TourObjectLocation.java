@@ -6,35 +6,21 @@ package com.example.android.travelbyloveguide;
 
 public class TourObjectLocation {
 
-    public String getStreetName() {
-        return streetName;
-    }
-
-    public void setStreetName(String streetName) {
-        this.streetName = streetName;
-    }
-
     private String streetName;
-
-    public int getStreetNumber() {
-        return streetNumber;
-    }
-
-    public void setStreetNumber(int streetNumber) {
-        this.streetNumber = streetNumber;
-    }
-
     private int streetNumber;
-
-    public String getCity() {
-        return city;
-    }
-
-    public void setCity(String city) {
-        this.city = city;
-    }
-
     private String city;
+    private String geoLocalization;
+
+    public TourObjectLocation(String streetName, int streetNumber, String city, String geoLocalization){
+        this.streetName=streetName;
+        this.streetNumber=streetNumber;
+        this.city=city;
+        this.geoLocalization=geoLocalization;
+    }
+
+    public TourObjectLocation(){
+        //empty constructor
+    };
 
     public String getGeoLocalization() {
         return geoLocalization;
@@ -44,12 +30,29 @@ public class TourObjectLocation {
         this.geoLocalization = geoLocalization;
     }
 
-    private String geoLocalization;
-
-    public TourObjectLocation(String streetName, int streetNumber, String city, String geoLocalization){
-        this.streetName=streetName;
-        this.streetNumber=streetNumber;
-        this.city=city;
-        this.geoLocalization=geoLocalization;
+    public String getCity() {
+        return city;
     }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public int getStreetNumber() {
+        return streetNumber;
+    }
+
+    public void setStreetNumber(int streetNumber) {
+        this.streetNumber = streetNumber;
+    }
+
+    public String getStreetName() {
+        return streetName;
+    }
+
+    public void setStreetName(String streetName) {
+        this.streetName = streetName;
+    }
+
+
 }

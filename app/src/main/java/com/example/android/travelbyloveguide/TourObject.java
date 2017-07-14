@@ -26,7 +26,6 @@ public class TourObject {
         this.mName=mName;
         this.mPhoneNumber=mPhoneNumber;
         this.mDescription=mDescription;
-        this.mImageResourceID=mImageResourceID;
     }
 
     public TourObjectLocation getmTourObjectLocation() {
