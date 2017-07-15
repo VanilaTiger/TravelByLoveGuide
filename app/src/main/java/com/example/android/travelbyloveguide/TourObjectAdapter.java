@@ -35,7 +35,7 @@ public class TourObjectAdapter extends ArrayAdapter<TourObject>{
         View listItemView = convertView;
         if(listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(
-                    R.layout.list_item, parent,false);
+                    R.layout.list_item_grid, parent,false);
         }
 
         // Get the {@link AndroidFlavor} object located at this position in the list
@@ -51,6 +51,8 @@ public class TourObjectAdapter extends ArrayAdapter<TourObject>{
 
         TextView descriptionTextView = (TextView) listItemView.findViewById(R.id.mDescriptOfTourObject);
         descriptionTextView.setText(currentTourObject.getmDescription());
+        int color = ContextCompat.getColor(getContext(),mBackgroundColor);
+        descriptionTextView.setBackgroundColor(color);
 
         TextView addressTextView = (TextView) listItemView.findViewById(R.id.mAddressOfTourObject);
         String locationString;
@@ -72,7 +74,8 @@ public class TourObjectAdapter extends ArrayAdapter<TourObject>{
         // so that it can be shown in the ListView
 
         View textContainer = (View) listItemView.findViewById(R.id.textContainer);
-        int color = ContextCompat.getColor(getContext(),mBackgroundColor);
+        // color used above
+        // int color = ContextCompat.getColor(getContext(),mBackgroundColor);
         textContainer.setBackgroundColor(color);
 
         return listItemView;

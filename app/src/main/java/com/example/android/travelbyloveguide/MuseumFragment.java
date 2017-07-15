@@ -20,14 +20,39 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
 
-/**
- * Fragment that displays "Wednesday".
- */
+import java.util.ArrayList;
+
 public class MuseumFragment extends Fragment {
+
+    public MuseumFragment(){
+        //Required empty public constructor
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_museum, container, false);
+
+        View rootView = inflater.inflate(R.layout.tour_object_list, container, false);
+
+        ArrayList<TourObject> tourObjectArrayList = new ArrayList<TourObject>();
+
+        TourObjectLocation location = new TourObjectLocation();
+
+        location.setCity("Santiago de Chile");
+        location.setStreetName("calle prinipal");
+        location.setStreetNumber(54);
+        location.setGeoLocalization("-33417005,-70619383");
+
+        tourObjectArrayList.add(new TourObject(location, "Museum 1", "+48519101141", "Nice Museum"));
+        //need to set adapter for a list
+
+        TourObjectAdapter adapter = new TourObjectAdapter(getActivity(), tourObjectArrayList, R.color.colorBackgroundTourObject);
+
+        ListView listView = (ListView) rootView.findViewById(R.id.list);
+
+        listView.setAdapter(adapter);
+
+        return rootView;
     }
 }

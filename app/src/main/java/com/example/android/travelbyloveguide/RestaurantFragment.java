@@ -20,13 +20,11 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.GridView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
 
-/**
- * Fragment that displays "Tuesday".
- */
 public class RestaurantFragment extends Fragment {
 
     public RestaurantFragment(){
@@ -36,23 +34,30 @@ public class RestaurantFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        View rootView = inflater.inflate(R.layout.tour_object_list, container, false);
+        View rootView = inflater.inflate(R.layout.tour_object_list_grid, container, false);
 
         ArrayList<TourObject> tourObjectArrayList= new ArrayList<TourObject>();
 
         TourObjectLocation location = new TourObjectLocation();
 
         location.setCity("Santiago de Chile");
-        location.setStreetName("calle prinipal");
+        location.setStreetName("calle principal");
         location.setStreetNumber(54);
         location.setGeoLocalization("-33417005,-70619383");
 
         tourObjectArrayList.add(new TourObject(location,"Restaurant 1","+48519101141","Nice Restaurant"));
-        //need to set adapter for a list
 
+        location.setCity("Santiago de Chile");
+        location.setStreetName("calle secunda");
+        location.setStreetNumber(54);
+        location.setGeoLocalization("-33417005,-70619383");
+
+        tourObjectArrayList.add(new TourObject(location,"Restaurant 2","+48519101141","tasty Restaurant"));
+
+        //need to set adapter for a list
         TourObjectAdapter adapter = new TourObjectAdapter(getActivity(), tourObjectArrayList,R.color.colorBackgroundTourObject);
 
-        ListView listView = (ListView) rootView.findViewById(R.id.list);
+        GridView listView = (GridView) rootView.findViewById(R.id.list_grid);
 
         listView.setAdapter(adapter);
 
