@@ -37,14 +37,25 @@ public class HostelFragment extends Fragment {
 
         ArrayList<TourObject> tourObjectArrayList = new ArrayList<TourObject>();
 
-        TourObjectLocation location = new TourObjectLocation();
+        ///Items add to the list
+        tourObjectArrayList.add(new TourObject(
+                new TourObjectLocation("Santiago de Chile","Monjitas",506,"-33417005,-70619383"),
+                "Andes Hostel", "no phone number",
+                getString(R.string.hostel_andes),
+                R.drawable.andes));
 
-        location.setCity("Santiago de Chile");
-        location.setStreetName("calle prinipal");
-        location.setStreetNumber(54);
-        location.setGeoLocalization("-33417005,-70619383");
+        tourObjectArrayList.add(new TourObject(
+                new TourObjectLocation("Santiago de Chile","Manuel Thompson",3940,"-33417005,-70619383"),
+                "Hotel Dacarlo", "+56 2 2422 0088",
+                getString(R.string.hostel_dacarlo),
+                R.drawable.dacarlo));
 
-        tourObjectArrayList.add(new TourObject(location, "Hostel 1", "+48519101141", "Nice Hostel"));
+        tourObjectArrayList.add(new TourObject(
+                new TourObjectLocation("Santiago de Chile","Pio Nono",193,"-33417005,-70619383"),
+                "Hotel Monteverde", "no phone number",
+                getString(R.string.hostel_monteverde),
+                R.drawable.monteverde));
+
         //need to set adapter for a list
 
         TourObjectAdapter adapter = new TourObjectAdapter(getActivity(), tourObjectArrayList, R.color.colorBackgroundTourObject);

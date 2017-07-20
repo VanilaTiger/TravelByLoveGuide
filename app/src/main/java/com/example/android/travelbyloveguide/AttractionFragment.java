@@ -38,34 +38,23 @@ public class AttractionFragment extends Fragment {
 
         ArrayList<TourObject> tourObjectArrayList = new ArrayList<TourObject>();
 
-        TourObjectLocation location1 = new TourObjectLocation();
-
-        location1.setCity("Cajon Del Maipo");
-        location1.setStreetName("mountain");
-        //location1.setStreetNumber(54);
-        location1.setGeoLocalization("-33417005,-70619383");
-
-        tourObjectArrayList.add(new TourObject(location1, "Day Trip to Cajon Del Maipo", "+1 855 275 5071",
-                "Marvel at outdoor landmarks like glaciers, waterfalls, and a scenic river gorge",
+        tourObjectArrayList.add(new TourObject(
+                new TourObjectLocation("Cajon Del Maipo","mountain",1,"-33417005,-70619383"),
+                "Day Trip to Cajon Del Maipo", "+1 855 275 5071",
+                getString(R.string.attraction_cajon),
                 R.drawable.mountain));
 
-        TourObjectLocation location2 = new TourObjectLocation();
-        location2.setCity("Santiago de Chile");
-        location2.setStreetName("Avenida Presidente Riesco");
-        location2.setStreetNumber(5330);
-        location2.setGeoLocalization("-33417005,-70619383");
-
-        tourObjectArrayList.add(new TourObject(location2, "Parque Araucano", "29644000",
-                "Parque Araucano is in the heart of Las Condes district, one of the richest communes of Santiago",
+        tourObjectArrayList.add(new TourObject(
+                new TourObjectLocation("Santiago de Chile", "Avenida Presidente Riesco",5330,"-33417005,-70619383"),
+                "Parque Araucano", "29644000",
+                getString(R.string.attraction_parq),
                 R.drawable.parq));
 
-        TourObjectLocation location3 = new TourObjectLocation();
-        location3.setCity("Santiago de Chile");
-        location3.setStreetName("calle tercera");
-        location3.setStreetNumber(74);
-        location3.setGeoLocalization("-33417005,-70619383");
-
-        tourObjectArrayList.add(new TourObject(location3, "Attraction 3", "+48519101141", "Great Attraction"));
+        tourObjectArrayList.add(new TourObject(
+                new TourObjectLocation ("Santiago de Chile","Casablanca Valley",1,"-33417005,-70619383"),
+                "Casablanca Valley", "+48519101141",
+                getString(R.string.attraction_valley),
+                R.drawable.valley));
 
 
         //need to set adapter for a list

@@ -4,4 +4,16 @@
     <string name="category_museum">museum</string>
     <string name="category_restaurant">food</string>
     <string name="category_hostel">hostel</string>
+    <string name="museum_precolombiano">The Chilean Museum of Pre-Columbian Art (Museo Chileno de Arte Precolombino) in Santiago</string>
+    <string name="museum_memoryandhumans">The Museum of Memory and Human Rights seeks to draw attention to human rights violations committed by the Chilean state between 1973 and 1990.</string>
+    <string name="museum_chascona">Tour the eclectic architecture of this home which served as the romantic hideaway for famed poet Pablo Neruda and his wife Matilde, as portrayed in the 1995 film "Il Postino."</string>
+    <string name="attraction_cajon">Marvel at outdoor landmarks like glaciers, waterfalls, and a scenic river gorge</string>
+    <string name="attraction_parq">Parque Araucano is in the heart of Las Condes district, one of the richest communes of Santiago</string>
+    <string name="attraction_valley">Famed for its agricultural perfection, the splendid scenery and smooth wines of the Casablanca Valley</string>
+    <string name="restaurant_peumayen">Excellent food presented as a tasting exploration of Chile.</string>
+    <string name="restaurant_latingrill">Latin Grill specializes in succulent steaks and seafood and prides itself on using seasonal Chilean products.</string>
+    <string name="restaurant_castillo">Restaurant located in the park inside of the castle serving french cuisine but using ingredients from Chile</string>
+    <string name="hostel_andes">Perfect location right in front of the metro and just steps from all the sights. The staff is amazing. Wifi in the rooms. Hair dryers in the bathrooms! Easy to meet other travelers</string>
+    <string name="hostel_monteverde">This is a great choice if you are on a budget, aren\'t expecting too much and want to stay in a lively area. </string>
+    <string name="hostel_dacarlo">Set on a bustling street in the city center, this unpretentious hotel in a redbrick building is a 2-minute walk from Terminal Alameda Santiago de Chile bus station.</string>
 </resources>

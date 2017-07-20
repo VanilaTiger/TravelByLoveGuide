@@ -38,21 +38,24 @@ public class RestaurantFragment extends Fragment {
 
         ArrayList<TourObject> tourObjectArrayList= new ArrayList<TourObject>();
 
-        TourObjectLocation location = new TourObjectLocation();
+        ///Items add to the list
+        tourObjectArrayList.add(new TourObject(
+                new TourObjectLocation("Santiago de Chile","Barrio Bellavista Constitucion",136,"-33417005,-70619383"),
+                "Peumayen Ancestral Food", "no phone number",
+                getString(R.string.restaurant_peumayen),
+                R.drawable.peumayen));
 
-        location.setCity("Santiago de Chile");
-        location.setStreetName("calle principal");
-        location.setStreetNumber(54);
-        location.setGeoLocalization("-33417005,-70619383");
+        tourObjectArrayList.add(new TourObject(
+                new TourObjectLocation("Santiago de Chile","Av Presidente Kennedy",5741,"-33417005,-70619383"),
+                "Latin Grill", "56-2-4262303",
+                getString(R.string.restaurant_latingrill),
+                R.drawable.latingrill));
 
-        tourObjectArrayList.add(new TourObject(location,"Restaurant 1","+48519101141","Nice Restaurant"));
-
-        location.setCity("Santiago de Chile");
-        location.setStreetName("calle secunda");
-        location.setStreetNumber(54);
-        location.setGeoLocalization("-33417005,-70619383");
-
-        tourObjectArrayList.add(new TourObject(location,"Restaurant 2","+48519101141","tasty Restaurant"));
+        tourObjectArrayList.add(new TourObject(
+                new TourObjectLocation("Santiago de Chile","Av. Cardenal Jose Maria Caro",390,"-33417005,-70619383"),
+                "Castillo Forestal", "+56 2 2664 1544",
+                getString(R.string.restaurant_castillo),
+                R.drawable.castillo));
 
         //need to set adapter for a list
         TourObjectAdapter adapter = new TourObjectAdapter(getActivity(), tourObjectArrayList,R.color.colorBackgroundTourObject);

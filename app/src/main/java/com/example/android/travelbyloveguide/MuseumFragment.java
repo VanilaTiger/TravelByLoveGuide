@@ -34,18 +34,25 @@ public class MuseumFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         View rootView = inflater.inflate(R.layout.tour_object_list, container, false);
-
         ArrayList<TourObject> tourObjectArrayList = new ArrayList<TourObject>();
+        ///Items add to the list
+                tourObjectArrayList.add(new TourObject(
+                        new TourObjectLocation("Santiago de Chile","Fernando Marquez De la Plata",1902,"-33417005,-70619383"),
+                        "La Chascona Casa Museo", "+56 2 2777 8741",
+                        getString(R.string.museum_chascona),
+                        R.drawable.chascona));
 
-        TourObjectLocation location = new TourObjectLocation();
+                tourObjectArrayList.add(new TourObject(
+                        new TourObjectLocation("Santiago de Chile","Avenida Matucana",501,"-33417005,-70619383"),
+                        "Museo de la Memoria y los Derechos Humanos", "+56 2 2597 9600",
+                        getString(R.string.museum_memoryandhumans),
+                        R.drawable.memoryandhumans));
 
-        location.setCity("Santiago de Chile");
-        location.setStreetName("calle prinipal");
-        location.setStreetNumber(54);
-        location.setGeoLocalization("-33417005,-70619383");
-
-        tourObjectArrayList.add(new TourObject(location, "Museum 1", "+48519101141", "Nice Museum"));
-        //need to set adapter for a list
+                tourObjectArrayList.add(new TourObject(
+                        new TourObjectLocation("Santiago de Chile","Bandera",361,"-33417005,-70619383"),
+                        "Museo Chileno de Arte Precolombino", "+56 2 2928 1522",
+                        getString(R.string.museum_precolombiano),
+                        R.drawable.precolombiano));
 
         TourObjectAdapter adapter = new TourObjectAdapter(getActivity(), tourObjectArrayList, R.color.colorBackgroundTourObject);
 

@@ -11,7 +11,7 @@ public class TourObjectLocation {
     private String city;
     private String geoLocalization;
 
-    public TourObjectLocation(String streetName, int streetNumber, String city, String geoLocalization){
+    public TourObjectLocation(String city, String streetName, int streetNumber, String geoLocalization){
         this.streetName=streetName;
         this.streetNumber=streetNumber;
         this.city=city;
