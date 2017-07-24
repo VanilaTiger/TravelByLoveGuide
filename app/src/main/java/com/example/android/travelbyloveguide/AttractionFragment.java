@@ -35,7 +35,6 @@ public class AttractionFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         View rootView = inflater.inflate(R.layout.tour_object_list_grid, container, false);
-
         ArrayList<TourObject> tourObjectArrayList = new ArrayList<TourObject>();
 
         tourObjectArrayList.add(new TourObject(
@@ -56,14 +55,10 @@ public class AttractionFragment extends Fragment {
                 getString(R.string.attraction_valley),
                 R.drawable.valley));
 
-
         //need to set adapter for a list
         TourObjectAdapter adapter = new TourObjectAdapter(getActivity(), tourObjectArrayList, R.color.colorBackgroundTourObject);
-
         GridView listView = (GridView) rootView.findViewById(R.id.list_grid);
-
         listView.setAdapter(adapter);
-
         return rootView;
     }
 }

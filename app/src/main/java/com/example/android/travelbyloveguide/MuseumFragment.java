@@ -55,11 +55,8 @@ public class MuseumFragment extends Fragment {
                         R.drawable.precolombiano));
 
         TourObjectAdapter adapter = new TourObjectAdapter(getActivity(), tourObjectArrayList, R.color.colorBackgroundTourObject);
-
         ListView listView = (ListView) rootView.findViewById(R.id.list);
-
         listView.setAdapter(adapter);
-
         return rootView;
     }
 }

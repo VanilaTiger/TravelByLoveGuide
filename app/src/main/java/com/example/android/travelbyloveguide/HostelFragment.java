@@ -34,9 +34,7 @@ public class HostelFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         View rootView = inflater.inflate(R.layout.tour_object_list, container, false);
-
         ArrayList<TourObject> tourObjectArrayList = new ArrayList<TourObject>();
-
         ///Items add to the list
         tourObjectArrayList.add(new TourObject(
                 new TourObjectLocation("Santiago de Chile","Monjitas",506,"-33417005,-70619383"),
@@ -59,11 +57,8 @@ public class HostelFragment extends Fragment {
         //need to set adapter for a list
 
         TourObjectAdapter adapter = new TourObjectAdapter(getActivity(), tourObjectArrayList, R.color.colorBackgroundTourObject);
-
         ListView listView = (ListView) rootView.findViewById(R.id.list);
-
         listView.setAdapter(adapter);
-
         return rootView;
     }
 }
