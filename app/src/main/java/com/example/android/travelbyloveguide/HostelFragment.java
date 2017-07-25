@@ -38,7 +38,7 @@ public class HostelFragment extends Fragment {
         ///Items add to the list
         tourObjectArrayList.add(new TourObject(
                 new TourObjectLocation("Santiago de Chile","Monjitas",506,"-33417005,-70619383"),
-                "Andes Hostel", "no phone number",
+                "Andes Hostel", getString(R.string.nophonenumber),
                 getString(R.string.hostel_andes),
                 R.drawable.andes));
 
@@ -50,7 +50,7 @@ public class HostelFragment extends Fragment {
 
         tourObjectArrayList.add(new TourObject(
                 new TourObjectLocation("Santiago de Chile","Pio Nono",193,"-33417005,-70619383"),
-                "Hotel Monteverde", "no phone number",
+                "Hotel Monteverde", getString(R.string.nophonenumber),
                 getString(R.string.hostel_monteverde),
                 R.drawable.monteverde));
 

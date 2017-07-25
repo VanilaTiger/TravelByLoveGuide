@@ -40,7 +40,7 @@ public class RestaurantFragment extends Fragment {
         ///Items add to the list
         tourObjectArrayList.add(new TourObject(
                 new TourObjectLocation("Santiago de Chile","Barrio Bellavista Constitucion",136,"-33417005,-70619383"),
-                "Peumayen Ancestral Food", "no phone number",
+                "Peumayen Ancestral Food", getString(R.string.nophonenumber),
                 getString(R.string.restaurant_peumayen),
                 R.drawable.peumayen));
 

@@ -44,13 +44,13 @@ public class MuseumFragment extends Fragment {
 
                 tourObjectArrayList.add(new TourObject(
                         new TourObjectLocation("Santiago de Chile","Avenida Matucana",501,"-33417005,-70619383"),
-                        "Museo de la Memoria y los Derechos Humanos", "+56 2 2597 9600",
+                        getString(R.string.museumofmemory), "+56 2 2597 9600",
                         getString(R.string.museum_memoryandhumans),
                         R.drawable.memoryandhumans));
 
                 tourObjectArrayList.add(new TourObject(
                         new TourObjectLocation("Santiago de Chile","Bandera",361,"-33417005,-70619383"),
-                        "Museo Chileno de Arte Precolombino", "+56 2 2928 1522",
+                        getString(R.string.museumprecolombiano), "+56 2 2928 1522",
                         getString(R.string.museum_precolombiano),
                         R.drawable.precolombiano));
 
